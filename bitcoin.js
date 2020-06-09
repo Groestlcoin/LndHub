@@ -1,4 +1,4 @@
-// setup bitcoind rpc
+// setup groestlcoind rpc
 const config = require('./config');
 let jayson = require('jayson/promise');
 let url = require('url');

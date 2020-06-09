@@ -1,6 +1,6 @@
 let config = {
   bitcoind: {
-    rpc: 'http://login:password@1.1.1.1:8332',
+    rpc: 'http://login:password@1.1.1.1:1441',
   },
   redis: {
     port: 12914,

@@ -21,11 +21,11 @@ let identity_pubkey = false;
 bitcoinclient.request('getblockchaininfo', false, function(err, info) {
   if (info && info.result && info.result.blocks) {
     if (info.result.chain === 'mainnet' && info.result.blocks < 550000) {
-      console.error('bitcoind is not caught up');
+      console.error('groestlcoind is not caught up');
       process.exit(1);
     }
   } else {
-    console.error('bitcoind failure:', err, info);
+    console.error('groestlcoind failure:', err, info);
     process.exit(2);
   }
 });

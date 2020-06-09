@@ -102,7 +102,7 @@ export class User {
   }
 
   /**
-   * Asks LND for new address, and imports it to bitcoind
+   * Asks LND for new address, and imports it to groestlcoind
    *
    * @returns {Promise<any>}
    */
@@ -299,7 +299,7 @@ export class User {
 
   /**
    * User's onchain txs that are >= 3 confs
-   * Queries bitcoind RPC.
+   * Queries groestlcoind RPC.
    *
    * @returns {Promise<Array>}
    */
@@ -359,7 +359,7 @@ export class User {
 
   /**
    * Simple caching for this._bitcoindrpc.request('listtransactions', ['*', 100500, 0, true]);
-   * since its too much to fetch from bitcoind every time
+   * since its too much to fetch from groestlcoind every time
    *
    * @returns {Promise<*>}
    * @private

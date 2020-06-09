@@ -12,15 +12,15 @@ You can use those guides or follow instructions below:
 * https://medium.com/@jpthor/running-lndhub-on-mac-osx-5be6671b2e0c
 
 ```
-git clone git@github.com:BlueWallet/LndHub.git
+git clone git@github.com:Groestlcoin/LndHub.git
 cd LndHub
 npm i
 ```
 
-Install `bitcoind`, `lnd` and `redis`. Edit `config.js` and set it up correctly.
+Install `groestlcoind`, `lnd` and `redis`. Edit `config.js` and set it up correctly.
 Copy `admin.macaroon` and `tls.cert` in root folder of LndHub.
 
-`bitcoind` should run with `-deprecatedrpc=accounts`, for now. Lndhub expects Lnd's wallet to be unlocked, if not - it will attempt to unlock it with password stored in `config.lnd.password`.
+`groestlcoind` should run with `-deprecatedrpc=accounts`, for now. Lndhub expects Lnd's wallet to be unlocked, if not - it will attempt to unlock it with password stored in `config.lnd.password`.
 Don't forget to enable disk-persistance for `redis`.
 
 
@@ -35,12 +35,12 @@ Add config vars :
 
 Can be used in ReactNative or Nodejs environment
 
-* https://github.com/BlueWallet/BlueWallet/blob/master/class/lightning-custodian-wallet.js
+* https://github.com/Groestlcoin/BlueWallet/blob/master/class/lightning-custodian-wallet.js
 
 
 ### Tests
 
-Acceptance tests are in https://github.com/BlueWallet/BlueWallet/blob/master/LightningCustodianWallet.test.js
+Acceptance tests are in https://github.com/Groestlcoin/BlueWallet/blob/master/LightningCustodianWallet.test.js
 
 ![image](https://user-images.githubusercontent.com/1913337/52418916-f30beb00-2ae6-11e9-9d63-17189dc1ae8c.png)
 
@@ -48,5 +48,5 @@ Acceptance tests are in https://github.com/BlueWallet/BlueWallet/blob/master/Lig
 
 ## Responsible disclosure
 
-Found critical bugs/vulnerabilities? Please email them bluewallet@bluewallet.io
+Found critical bugs/vulnerabilities? Please email them groestlcoin@groestlcoin.org
 Thanks!
